@@ -27,3 +27,15 @@ printf "\n[Downloading ruy]\n"
 curl -L -o /tmp/ruy.zip https://github.com/google/ruy/archive/a09683b8da7164b9c5704f88aef2dc65aa583e5d.zip
 unzip -q /tmp/ruy.zip -d /tmp/
 mv /tmp/ruy-a09683b8da7164b9c5704f88aef2dc65aa583e5d ruy/
+
+# flatbuffers
+printf "\n[Downloading flatbuffers]\n"
+curl -L -o /tmp/flatbuffers.zip https://github.com/google/flatbuffers/archive/refs/tags/v2.0.0.zip
+unzip -q /tmp/flatbuffers.zip -d /tmp/flatbuffers/
+mv /tmp/flatbuffers/flatbuffers-2.0.0 flatbuffers/
+
+# kineto
+printf "\n[Downloading kineto]\n"
+curl -L -o /tmp/kineto.zip https://github.com/pytorch/kineto/archive/refs/tags/v0.4.0.zip
+unzip -q /tmp/kineto.zip -d /tmp/kineto/
+mv /tmp/kineto/kineto-0.4.0/libkineto/ kineto/
